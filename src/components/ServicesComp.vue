@@ -7,27 +7,27 @@ export default{
         return{
             services:[
                 {
-                    icon: 'buy-comics-digital-comics.png',
+                    icon: 'img/buy-comics-digital-comics.png',
                     title: 'DIGITAL COMICS',
                     link: '#',
                 },
                 {
-                    icon: '../assets/img/buy-comics-merchandise.png',
+                    icon: 'img/buy-comics-merchandise.png',
                     title: 'DC MERCHANDISE',
                     link: '#',
                 },
                 {
-                    icon: '../assets/img/buy-comics-subscriptions.png',
+                    icon: '/img/buy-comics-subscriptions.png',
                     title: 'SUBSCRIPTION',
                     link: '#',
                 },
                 {
-                    icon: '../assets/img/buy-comics-shop-locator.png',
+                    icon: '/img/buy-comics-shop-locator.png',
                     title: 'COMIC SHOP LOCATOR',
                     link: '#',
                 },
                 {
-                    icon: '../assets/img/buy-dc-power-visa.svg',
+                    icon: '/img/buy-dc-power-visa.svg',
                     title: 'DC POWER VISA',
                     link: '#',
                 },
@@ -46,7 +46,6 @@ export default{
         <div class="container">
 
             <div v-for="(service, index) in services" :key="index">
-                
                 <a :href="service.link" target="_blank">
                     <figure>
                         <img :src="service.icon" :alt="service.title">
@@ -77,6 +76,7 @@ export default{
     display: flex;
     padding-inline: 20px;
     justify-content: space-between;
+    align-items: center;
     
     div{
         padding-block: 50px;
@@ -90,7 +90,8 @@ export default{
             column-gap: 20px;
 
             img{
-                width: 50px;
+                height: 50px;
+                max-width: 50px;
             }
         }
     }
