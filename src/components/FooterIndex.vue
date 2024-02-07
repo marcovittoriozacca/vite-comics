@@ -165,7 +165,7 @@ export default{
 
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../assets/style/partials/variables' as *;
 @use '../assets/style/partials/mixins' as *;
 

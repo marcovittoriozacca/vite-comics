@@ -3,6 +3,7 @@ import HeaderComp from './components/HeaderComp.vue';
 import ContentComp from './components/ContentComp.vue';
 import ServicesComp from './components/ServicesComp.vue';
 import FooterIndex from './components/FooterIndex.vue';
+import FooterSocials from './components/FooterSocials.vue';
 
 export default{
   components:{
@@ -10,6 +11,7 @@ export default{
     ContentComp,
     ServicesComp,
     FooterIndex,
+    FooterSocials,
   }
 }
 
@@ -27,6 +29,7 @@ export default{
 
   <footer>
     <FooterIndex/>
+    <FooterSocials/>
   </footer>
 
 </template>
