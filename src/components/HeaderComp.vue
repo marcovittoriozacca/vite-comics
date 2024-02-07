@@ -74,8 +74,8 @@ export default{
         </figure>
 
         <ul>
-            <li v-for="(element, index) in navLinks" :key="index">
-            <a :href="element.link" target="_blank" :class="element.activeLink ? 'active':''">
+            <li v-for="(element, index) in navLinks" :key="index" :class="element.activeLink ? 'active':''">
+            <a :href="element.link" target="_blank" >
                 {{ element.name }}
             </a>
         </li>
@@ -86,6 +86,7 @@ export default{
 
 </template>
 
+//
 
 
 <style lang="scss" scoped>
@@ -110,20 +111,40 @@ export default{
                 column-gap: 30px;
 
                 li{
-                    
+                    position: relative;
+                    &:hover::before{
+                        content: '';
+                        position: absolute;
+                        bottom: -49px;
+                        width: 100%;
+                        height: 5px;
+                        background-color: $blue-color;
+                    }
                     a{
                         
                         color: rgb(97, 97, 97);
                         font-size: 0.8rem;
+                        &:hover{
+                            color: $blue-color;
+                        }
                     }
                 }
             }
 
         }
     }
-    //not finished
     .active{
-        color: $blue-color;
-        border-bottom: 5px solid $blue-color;
+        &::before{
+            content: '';
+                position: absolute;
+                bottom: -49px;
+                width: 100%;
+                height: 5px;
+                background-color: $blue-color;
+            }
+        a{
+            color: $blue-color;
+        }
     }
+
 </style>
