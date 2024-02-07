@@ -1,11 +1,13 @@
 <script>
 import HeaderComp from './components/HeaderComp.vue';
 import ContentComp from './components/ContentComp.vue';
+import ServicesComp from './components/ServicesComp.vue';
 
 export default{
   components:{
     HeaderComp,
     ContentComp,
+    ServicesComp,
   }
 }
 
@@ -18,6 +20,7 @@ export default{
 
   <main>
     <ContentComp/>
+    <ServicesComp/>
   </main>
 
 </template>
