@@ -8,30 +8,37 @@ export default{
             socials:[
                 {
                     name: 'Facebook',
-                    icon: '/img/footer-facebook.png',
+                    icon: '../assets/img/footer-facebook.png',
                     url: '#'
                 },
                 {
                     name: 'Twitter',
-                    icon: '/img/footer-twitter.png',
+                    icon: '../assets/img/footer-twitter.png',
                     url: '#'
                 },
                 {
                     name: 'YouTube',
-                    icon: '/img/footer-youtube.png',
+                    icon: '../assets/img/footer-youtube.png',
                     url: '#'
                 },
                 {
                     name: 'Pinterest',
-                    icon: '/img/footer-pinterest.png',
+                    icon: '../assets/img/footer-pinterest.png',
                     url: '#'
                 },
                 {
                     name: 'Periscope',
-                    icon: '/img/footer-periscope.png',
+                    icon: '../assets/img/footer-periscope.png',
                     url: '#'
                 },
             ]
+        }
+    },
+    methods:{
+
+        getImagePath: function (imgPath) {
+            let url = new URL(imgPath, import.meta.url).href;
+            return url
         }
     }
 }
@@ -54,7 +61,7 @@ export default{
                 <a href="#" class="followUs" target="_blank">FOLLOW US</a>
                 <a :href="social.url" v-for="(social, index) in socials" :key="index" target="_blank">
                     <figure>
-                        <img :src="social.icon" :alt="social.name">
+                        <img :src="getImagePath(social.icon)" :alt="social.name">
                     </figure>
                 </a>
             </div>

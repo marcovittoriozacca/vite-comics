@@ -156,7 +156,7 @@ export default{
         </nav>
     
         <figure>
-            <img src="/img/dc-logo-bg.png" alt="">
+            <img src="../assets/img/dc-logo-bg.png" alt="">
         </figure>
     </div>
 </div>
@@ -170,7 +170,7 @@ export default{
 @use '../assets/style/partials/mixins' as *;
 
 .footer-bg{
-    background-image: url('/img/footer-bg.jpg');
+    background-image: url('../assets/img/footer-bg.jpg');
     @include background-reset;
     height: 400px;
     

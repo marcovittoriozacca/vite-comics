@@ -70,7 +70,7 @@ export default{
   <header>
     <nav>
         <figure>
-            <img src="/img/dc-logo.png" alt="DC-LOGO" width="80">
+            <img src="../assets/img/dc-logo.png" alt="DC-LOGO" width="80">
         </figure>
 
         <ul>

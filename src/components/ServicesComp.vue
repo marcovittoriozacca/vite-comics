@@ -7,32 +7,39 @@ export default{
         return{
             services:[
                 {
-                    icon: 'img/buy-comics-digital-comics.png',
+                    icon: '../assets/img/buy-comics-digital-comics.png',
                     title: 'DIGITAL COMICS',
                     link: '#',
                 },
                 {
-                    icon: 'img/buy-comics-merchandise.png',
+                    icon: '../assets/img/buy-comics-merchandise.png',
                     title: 'DC MERCHANDISE',
                     link: '#',
                 },
                 {
-                    icon: '/img/buy-comics-subscriptions.png',
+                    icon: '../assets//img/buy-comics-subscriptions.png',
                     title: 'SUBSCRIPTION',
                     link: '#',
                 },
                 {
-                    icon: '/img/buy-comics-shop-locator.png',
+                    icon: '../assets//img/buy-comics-shop-locator.png',
                     title: 'COMIC SHOP LOCATOR',
                     link: '#',
                 },
                 {
-                    icon: '/img/buy-dc-power-visa.svg',
+                    icon: '../assets//img/buy-dc-power-visa.svg',
                     title: 'DC POWER VISA',
                     link: '#',
                 },
             ]
 
+        }
+    },
+    methods:{
+
+        getImagePath: function (imgPath) {
+            let url = new URL(imgPath, import.meta.url).href;
+            return url
         }
     }
 }
@@ -48,7 +55,7 @@ export default{
             <div v-for="(service, index) in services" :key="index">
                 <a :href="service.link" target="_blank">
                     <figure>
-                        <img :src="service.icon" :alt="service.title">
+                        <img :src="getImagePath(service.icon)" :alt="service.title">
                     </figure>
                     <p>{{ service.title }}</p>
                 </a>
