@@ -115,7 +115,7 @@ export default{
                     &:hover::before{
                         content: '';
                         position: absolute;
-                        bottom: -49px;
+                        bottom: -48.5px;
                         width: 100%;
                         height: 5px;
                         background-color: $blue-color;
@@ -137,7 +137,7 @@ export default{
         &::before{
             content: '';
                 position: absolute;
-                bottom: -49px;
+                bottom: -48.5px;
                 width: 100%;
                 height: 5px;
                 background-color: $blue-color;

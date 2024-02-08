@@ -148,7 +148,7 @@ export default{
                     {{ list.title }}
                 </li>
                 <li v-for="(listElement, index) in list.listElements" :key="index">
-                    <a :href="listElement.url" class="listLink">
+                    <a :href="listElement.url" class="listLink" target="_blank">
                         {{ listElement.name }}
                     </a>
                 </li>
@@ -183,6 +183,7 @@ export default{
         overflow: hidden;
 
         nav{
+            z-index: 1;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;

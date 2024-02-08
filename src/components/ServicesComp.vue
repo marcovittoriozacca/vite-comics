@@ -17,17 +17,17 @@ export default{
                     link: '#',
                 },
                 {
-                    icon: '../assets//img/buy-comics-subscriptions.png',
+                    icon: '../assets/img/buy-comics-subscriptions.png',
                     title: 'SUBSCRIPTION',
                     link: '#',
                 },
                 {
-                    icon: '../assets//img/buy-comics-shop-locator.png',
+                    icon: '../assets/img/buy-comics-shop-locator.png',
                     title: 'COMIC SHOP LOCATOR',
                     link: '#',
                 },
                 {
-                    icon: '../assets//img/buy-dc-power-visa.svg',
+                    icon: '../assets/img/buy-dc-power-visa.svg',
                     title: 'DC POWER VISA',
                     link: '#',
                 },

@@ -8,6 +8,10 @@ Per oggi diamo priorità alla struttura: quando è tutto bello solido, passiamo 
 
 Creare un componente aggiuntivo per gestire la fascia azzurra con le icone.
 
-## Mockup
+## Mockup Iniziale
 
 ![DC COMICS MOCKUP](./public/dc-comics-empty-layout.png)
+
+## Mockup Completo
+
+![DC COMICS MOCKUP](./public/dc-comics.png)
