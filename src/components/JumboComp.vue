@@ -17,7 +17,7 @@ export default {
 @use '../assets/style/partials/mixins' as *;
 
 div{
-    height: 300px;
+    height: 450px;
     background-image: url('../assets/img/jumbotron.jpg');
     @include background-reset;
     background-position-y: top;

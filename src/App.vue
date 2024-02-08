@@ -1,6 +1,6 @@
 <script>
 import HeaderComp from './components/HeaderComp.vue';
-import ContentComp from './components/ContentComp.vue';
+import ComicsComp from './components/ComicsComp.vue';
 import ServicesComp from './components/ServicesComp.vue';
 import FooterIndex from './components/FooterIndex.vue';
 import FooterSocials from './components/FooterSocials.vue';
@@ -9,7 +9,7 @@ export default{
 
   components:{
     HeaderComp,
-    ContentComp,
+    ComicsComp,
     ServicesComp,
     FooterIndex,
     FooterSocials,
@@ -27,7 +27,7 @@ export default{
 
   <main>
     <JumboComp/>
-    <ContentComp/>
+    <ComicsComp/>
     <ServicesComp/>
   </main>
 
